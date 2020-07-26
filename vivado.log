@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jan 18 20:35:11 2019
+# Process ID: 80872
+# Current directory: C:/Users/ibair_7q5j8rl/Desktop/demo_v2/Popbl-a
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent71084 C:\Users\ibair_7q5j8rl\Desktop\demo_v2\Popbl-a\Popbl-a.xpr
+# Log file: C:/Users/ibair_7q5j8rl/Desktop/demo_v2/Popbl-a/vivado.log
+# Journal file: C:/Users/ibair_7q5j8rl/Desktop/demo_v2/Popbl-a\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ibair_7q5j8rl/Desktop/demo_v2/Popbl-a/Popbl-a.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 767.500 ; gain = 44.512
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 18 20:35:53 2019...

@@ -1,0 +1,756 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jan 18 20:27:48 2019
+# Process ID: 15816
+# Current directory: C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.runs/synth_1/main.vds
+# Journal file: C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15404 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 346.102 ; gain = 101.781
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/segundutikDisplayera.vhd:48]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/segundutikDisplayera.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:20]
+INFO: [Synth 8-3491] module 'seven_segment_display_VHDL' declared at 'C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:6' bound to instance 'denboragailua' of component 'seven_segment_display_VHDL' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'seven_segment_display_VHDL' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:18]
+INFO: [Synth 8-3491] module 'segundutikDisplayera' declared at 'C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/segundutikDisplayera.vhd:34' bound to instance 'display' of component 'segundutikDisplayera' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'segundutikDisplayera' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/segundutikDisplayera.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'segundutikDisplayera' (1#1) [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/segundutikDisplayera.vhd:42]
+WARNING: [Synth 8-614] signal 'displayed_number' is read in the process but is not in the sensitivity list [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment_display_VHDL' (2#1) [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:18]
+INFO: [Synth 8-3491] module 'decodif' declared at 'C:/Users/ibair_7q5j8rl/Desktop/demo/demo.srcs/sources_1/new/decodif.vhd:34' bound to instance 'decodi_FIC' of component 'decodif' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'decodif' [C:/Users/ibair_7q5j8rl/Desktop/demo/demo.srcs/sources_1/new/decodif.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'decodif' (3#1) [C:/Users/ibair_7q5j8rl/Desktop/demo/demo.srcs/sources_1/new/decodif.vhd:39]
+INFO: [Synth 8-3491] module 'main_uart' declared at 'C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main_uart.vhd:25' bound to instance 'tb_UART' of component 'main_uart' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'main_uart' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main_uart.vhd:37]
+INFO: [Synth 8-3491] module 'kcuart_rx' declared at 'C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:12' bound to instance 'tb_kcuartrx' of component 'kcuart_rx' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main_uart.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:23]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sync_reg' to cell 'FD' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:67]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'stop_reg' to cell 'FD' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:72]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:91]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:113]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:128]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'start_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:142]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'start_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:155]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'edge_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:165]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'edge_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:178]
+	Parameter INIT bound to: 16'b0000000001000000 
+INFO: [Synth 8-113] binding component instance 'valid_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:186]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'valid_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:196]
+	Parameter INIT bound to: 8'b01010100 
+INFO: [Synth 8-113] binding component instance 'purge_lut' to cell 'LUT3' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:204]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'purge_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:213]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay15_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:234]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay16_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:256]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:271]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-113] binding component instance 'strobe_lut' to cell 'LUT2' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:281]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'strobe_reg' to cell 'FD' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:289]
+WARNING: [Synth 8-2887] Directive 'init' on 'valid_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'purge_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'strobe_lut' is unsupported and ignored
+INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (4#1) [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd:23]
+INFO: [Synth 8-3491] module 'kcuart_tx' declared at 'C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:13' bound to instance 'tb_kcuartrt' of component 'kcuart_tx' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main_uart.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'kcuart_tx' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:25]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-113] binding component instance 'mux1_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:84]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-113] binding component instance 'mux2_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:94]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-113] binding component instance 'mux3_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:104]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-113] binding component instance 'mux4_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:114]
+INFO: [Synth 8-113] binding component instance 'mux5_muxf5' to cell 'MUXF5' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:124]
+INFO: [Synth 8-113] binding component instance 'mux6_muxf5' to cell 'MUXF5' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:130]
+INFO: [Synth 8-113] binding component instance 'mux7_muxf6' to cell 'MUXF6' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:136]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pipeline_serial' to cell 'FDRS' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:144]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:165]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:172]
+INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:180]
+INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:188]
+INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:194]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:165]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:172]
+INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:180]
+INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:204]
+INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:210]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'register_bit' to cell 'FDRE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:165]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-113] binding component instance 'count_lut' to cell 'LUT2' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:172]
+INFO: [Synth 8-113] binding component instance 'mask_and' to cell 'MULT_AND' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:180]
+INFO: [Synth 8-113] binding component instance 'count_muxcy' to cell 'MUXCY' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:204]
+INFO: [Synth 8-113] binding component instance 'count_xor' to cell 'XORCY' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:210]
+	Parameter INIT bound to: 8'b00010000 
+INFO: [Synth 8-113] binding component instance 'ready_lut' to cell 'LUT3' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:221]
+	Parameter INIT bound to: 16'b0000000110010000 
+INFO: [Synth 8-113] binding component instance 'start_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:232]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Tx_start_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:242]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-113] binding component instance 'run_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:251]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Tx_run_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:261]
+	Parameter INIT bound to: 8'b10010100 
+INFO: [Synth 8-113] binding component instance 'hot_state_lut' to cell 'LUT3' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:269]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'hot_state_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:278]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'delay14_srl' to cell 'SRL16E' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:284]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Tx_bit_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:297]
+	Parameter INIT bound to: 16'b0000000110000000 
+INFO: [Synth 8-113] binding component instance 'stop_lut' to cell 'LUT4' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:305]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Tx_stop_reg' to cell 'FDE' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:315]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-113] binding component instance 'complete_lut' to cell 'LUT2' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:323]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Tx_complete_reg' to cell 'FD' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:331]
+WARNING: [Synth 8-2887] Directive 'init' on 'mux1_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'mux2_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'mux3_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'mux4_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'ready_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'start_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'run_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'hot_state_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'stop_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'complete_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[0].count_lut ' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[1].count_lut ' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[2].count_lut ' is unsupported and ignored
+INFO: [Synth 8-256] done synthesizing module 'kcuart_tx' (5#1) [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'main_uart' (6#1) [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main_uart.vhd:37]
+WARNING: [Synth 8-614] signal 'bukatuta' is read in the process but is not in the sensitivity list [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:139]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element tinbre_aux_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-6014] Unused sequential element tinbre_ok_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'main' (7#1) [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:20]
+WARNING: [Synth 8-3331] design main has unconnected port botoia
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 395.945 ; gain = 151.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 395.945 ; gain = 151.625
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/constrs_1/new/constrain.xdc]
+Finished Parsing XDC File [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/constrs_1/new/constrain.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/constrs_1/new/constrain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  FD => FDRE: 4 instances
+  FDE => FDRE: 26 instances
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instances
+  MULT_AND => LUT2: 3 instances
+  MUXF5 => LUT3: 2 instances
+  MUXF6 => LUT3: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 734.570 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 734.570 ; gain = 490.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 734.570 ; gain = 490.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 734.570 ; gain = 490.250
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "display2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "display2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element refresh_counter_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element one_second_counter_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:41]
+INFO: [Synth 8-5546] ROM "B" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_rx" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioa1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Balioacons" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element baud_count_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:96]
+WARNING: [Synth 8-2887] Directive 'init' on 'valid_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'purge_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'strobe_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'mux1_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'mux2_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'mux3_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'mux4_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'ready_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'start_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'run_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'hot_state_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'stop_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on 'complete_lut' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[0].count_lut ' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[1].count_lut ' is unsupported and ignored
+WARNING: [Synth 8-2887] Directive 'init' on '\count_width_loop[2].count_lut ' is unsupported and ignored
+WARNING: [Synth 8-327] inferring latch for variable 'rx_jaso_reg' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:155]
+WARNING: [Synth 8-327] inferring latch for variable 'tx_reg' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'bidali_infor_reg' [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 734.570 ; gain = 490.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                 7x32  Multipliers := 1     
+	                 5x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 5x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module segundutikDisplayera 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
++---Multipliers : 
+	                 7x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+Module seven_segment_display_VHDL 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module decodif 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "display2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "display2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_rx" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Balioacons" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element denboragailua/one_second_counter_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element denboragailua/timer_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:41]
+WARNING: [Synth 8-6014] Unused sequential element denboragailua/refresh_counter_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/imports/new/rehabilitacion.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element baud_count_reg was removed.  [C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.srcs/sources_1/new/main.vhd:96]
+WARNING: [Synth 8-3331] design main has unconnected port botoia
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[31]' (FDE) to 'Balioa1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[30]' (FDE) to 'Balioa1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[29]' (FDE) to 'Balioa1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[28]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[4]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[5]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[6]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[7]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[8]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[9]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[10]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[11]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[12]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[13]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[14]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[15]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[16]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[17]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[18]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[19]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[20]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[21]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[22]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[23]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[24]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[26]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioa1_reg[25]' (FDE) to 'Balioa1_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Balioa1_reg[27] )
+INFO: [Synth 8-3886] merging instance 'tx_reg[7]' (LD) to 'tx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'tx_reg[6]' (LD) to 'tx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tx_reg[5]' (LD) to 'tx_reg[4]'
+INFO: [Synth 8-3886] merging instance 'tx_reg[4]' (LD) to 'tx_reg[1]'
+INFO: [Synth 8-3886] merging instance 'tx_reg[3]' (LD) to 'tx_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tx_reg[2] )
+INFO: [Synth 8-3886] merging instance 'tx_reg[1]' (LD) to 'tx_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tx_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[30]' (FDRE) to 'Balioacons_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[31]' (FDRE) to 'Balioacons_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[29]' (FDRE) to 'Balioacons_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[28]' (FDRE) to 'Balioacons_reg[27]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[27]' (FDRE) to 'Balioacons_reg[26]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[26]' (FDRE) to 'Balioacons_reg[25]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[25]' (FDRE) to 'Balioacons_reg[24]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[24]' (FDRE) to 'Balioacons_reg[23]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[23]' (FDRE) to 'Balioacons_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[22]' (FDRE) to 'Balioacons_reg[21]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[21]' (FDRE) to 'Balioacons_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[20]' (FDRE) to 'Balioacons_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[19]' (FDRE) to 'Balioacons_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[18]' (FDRE) to 'Balioacons_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[17]' (FDRE) to 'Balioacons_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[16]' (FDRE) to 'Balioacons_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[15]' (FDRE) to 'Balioacons_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[14]' (FDRE) to 'Balioacons_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[13]' (FDRE) to 'Balioacons_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[12]' (FDRE) to 'Balioacons_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[11]' (FDRE) to 'Balioacons_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[10]' (FDRE) to 'Balioacons_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[9]' (FDRE) to 'Balioacons_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[8]' (FDRE) to 'Balioacons_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[7]' (FDRE) to 'Balioacons_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[6]' (FDRE) to 'Balioacons_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[5]' (FDRE) to 'Balioacons_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Balioacons_reg[4]' (FDRE) to 'Balioacons_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Balioacons_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[29]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[9]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[10]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[11]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[12]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[13]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[14]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[15]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[16]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[17]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[18]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[19]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[20]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[21]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[22]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[23]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[24]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[25]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[27]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa2_reg[26]' (FDE) to 'Balioa2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[30]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[14]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[15]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[16]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[17]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[18]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[19]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[20]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[21]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[22]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[23]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[24]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[25]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[26]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[28]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa3_reg[27]' (FDE) to 'Balioa3_reg[29]'
+INFO: [Synth 8-3886] merging instance 'Balioa4_reg[31]' (FDE) to 'Balioa4_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Balioa4_reg[19]' (FDE) to 'Balioa4_reg[30]'
+INFO: [Synth 8-3886] merging instance 'Balioa4_reg[20]' (FDE) to 'Balioa4_reg[30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (rx_jaso_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rx_jaso_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rx_jaso_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (rx_jaso_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (tx_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (tx_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Balioacons_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Balioa1_reg[27]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Balioa2_reg[31]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Balioa2_reg[30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Balioa3_reg[31]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 734.570 ; gain = 490.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 760.199 ; gain = 515.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 784.109 ; gain = 539.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   432|
+|3     |LUT1     |    88|
+|4     |LUT2     |   350|
+|5     |LUT3     |   542|
+|6     |LUT4     |   292|
+|7     |LUT5     |   376|
+|8     |LUT6     |   952|
+|9     |MULT_AND |     3|
+|10    |MUXCY    |     3|
+|11    |MUXF5    |     2|
+|12    |MUXF6    |     1|
+|13    |SRL16E   |    20|
+|14    |XORCY    |     3|
+|15    |FD       |     4|
+|16    |FDCE     |     3|
+|17    |FDE      |    26|
+|18    |FDRE     |   180|
+|19    |LD       |     5|
+|20    |IBUF     |     4|
+|21    |OBUF     |    14|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+---------------------------+------+
+|      |Instance        |Module                     |Cells |
++------+----------------+---------------------------+------+
+|1     |top             |                           |  3302|
+|2     |  denboragailua |seven_segment_display_VHDL |  2679|
+|3     |    display     |segundutikDisplayera       |  1863|
+|4     |  tb_UART       |main_uart                  |   117|
+|5     |    tb_kcuartrt |kcuart_tx                  |    38|
+|6     |    tb_kcuartrx |kcuart_rx                  |    79|
++------+----------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 839.211 ; gain = 594.891
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 839.211 ; gain = 256.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 839.211 ; gain = 594.891
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 483 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instances
+  FD => FDRE: 4 instances
+  FDE => FDRE: 26 instances
+  LD => LDCE: 5 instances
+  MULT_AND => LUT2: 3 instances
+  MUXF5 => LUT3: 2 instances
+  MUXF6 => LUT3: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+247 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 839.211 ; gain = 607.645
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ibair_7q5j8rl/Desktop/demo_v2/demo.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 839.211 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 18 20:28:45 2019...

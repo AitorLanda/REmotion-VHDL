@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1547839664">
+  <File Type="PA-TCL" Name="main.tcl"/>
+  <File Type="REPORTS-TCL" Name="main_reports.tcl"/>
+  <File Type="RDS-RDS" Name="main.vds"/>
+  <File Type="RDS-UTIL" Name="main_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="main_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="main.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/decodif.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../demo/demo.srcs/sources_1/new/decodif.vhd"/>
+        <Attr Name="ImportTime" Val="1547838474"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../FITXATEGIAK/kcuart_rx.vhd"/>
+        <Attr Name="ImportTime" Val="1096616508"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../FITXATEGIAK/kcuart_tx.vhd"/>
+        <Attr Name="ImportTime" Val="1096616508"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main_uart.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../demo.srcs/sources_1/new/main_uart.vhd"/>
+        <Attr Name="ImportTime" Val="1547129178"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rehabilitacion.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rehabilitacion_6/rehabilitacion_1.srcs/sources_1/new/rehabilitacion.vhd"/>
+        <Attr Name="ImportTime" Val="1545396781"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/segundutikDisplayera.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rehabilitacion_6/rehabilitacion_1.srcs/sources_1/new/segundutikDisplayera.vhd"/>
+        <Attr Name="ImportTime" Val="1545397314"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../demo.srcs/sources_1/new/main.vhd"/>
+        <Attr Name="ImportTime" Val="1547839659"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="main"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constrain.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../demo.srcs/constrs_1/new/constrain.xdc"/>
+        <Attr Name="ImportTime" Val="1547818128"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

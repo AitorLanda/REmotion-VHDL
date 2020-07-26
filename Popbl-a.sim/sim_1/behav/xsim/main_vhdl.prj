@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_rx.vhd" \
+"../../../../demo.srcs/sources_1/imports/FITXATEGIAK/kcuart_tx.vhd" \
+"../../../../demo.srcs/sources_1/new/main_uart.vhd" \
+"../../../../demo.srcs/sources_1/imports/new/rehabilitacion.vhd" \
+"../../../../demo.srcs/sources_1/imports/new/segundutikDisplayera.vhd" \
+"../../../../demo.srcs/sources_1/new/main.vhd" \
+
+# Do not sort compile order
+nosort
